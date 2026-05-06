@@ -1,0 +1,20 @@
+{
+  "name": "soulmatchbg-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "vercel": "vercel --prod"
+  },
+  "description": "SoulMatchBG swipe dating web app MVP for localhost and Vercel.",
+  "keywords": [
+    "dating",
+    "swipe",
+    "vercel",
+    "soulmatchbg"
+  ],
+  "author": "SoulFlame",
+  "license": "MIT"
+}

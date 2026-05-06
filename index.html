@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08070d" />
+  <meta name="description" content="SoulMatchBG — Swipe dating web app MVP за Vercel и localhost." />
+  <title>SoulMatchBG — Swipe Dating App</title>
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>SoulMatchBG</h1>
+          <span>Swipe. Match. Chat.</span>
+        </div>
+      </div>
+
+      <button class="icon-btn" id="resetBtn" title="Рестарт">↻</button>
+    </header>
+
+    <div class="tabs">
+      <button class="tab active" data-screen="discover">Открий</button>
+      <button class="tab" data-screen="matches">Съвпадения</button>
+      <button class="tab" data-screen="chat">Чат</button>
+      <button class="tab" data-screen="profile">Профил</button>
+    </div>
+
+    <section id="discover" class="screen active">
+      <div class="deck" id="deck"></div>
+
+      <div class="controls">
+        <button class="action small no" id="nopeBtn" aria-label="Не харесвам">✕</button>
+        <button class="action small super" id="superBtn" aria-label="Super like">★</button>
+        <button class="action big like" id="likeBtn" aria-label="Харесвам">♥</button>
+      </div>
+    </section>
+
+    <section id="matches" class="screen">
+      <div class="stats">
+        <div class="stat">
+          <strong id="likesCount">0</strong>
+          <span>харесани</span>
+        </div>
+        <div class="stat">
+          <strong id="matchesCount">0</strong>
+          <span>мачове</span>
+        </div>
+        <div class="stat">
+          <strong id="seenCount">0</strong>
+          <span>видени</span>
+        </div>
+      </div>
+
+      <div class="list" id="matchesList"></div>
+    </section>
+
+    <section id="chat" class="screen">
+      <div class="chat-box">
+        <div class="chat-head" id="chatHead">AI Match Assistant</div>
+
+        <div class="messages" id="messages">
+          <div class="msg them">
+            Здрасти 👋 Това е демо чат. Когато имаш match, тук се отваря разговор.
+          </div>
+          <div class="msg me">
+            MVP версия за localhost и Vercel.
+          </div>
+        </div>
+
+        <form class="chat-input" id="chatForm">
+          <input id="chatInput" placeholder="Напиши съобщение..." autocomplete="off" />
+          <button type="submit">Изпрати</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="profile" class="screen">
+      <div class="profile-panel">
+        <h2>Моят профил</h2>
+        <p>
+          Това е демо профил. Данните се пазят локално в браузъра.
+          Следващият ъпгрейд е Firebase/Supabase за login, снимки, реални профили и чат.
+        </p>
+
+        <div class="field">
+          <label for="myName">Име</label>
+          <input id="myName" placeholder="Например: Митко" />
+        </div>
+
+        <div class="field">
+          <label for="myCity">Град</label>
+          <input id="myCity" placeholder="Например: Сливен" />
+        </div>
+
+        <div class="field">
+          <label for="myBio">Описание</label>
+          <textarea id="myBio" placeholder="Кратко описание..."></textarea>
+        </div>
+
+        <button class="primary" id="saveProfileBtn">Запази профила</button>
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active" data-screen="discover">🔥<span>Открий</span></button>
+      <button class="nav-btn" data-screen="matches">💘<span>Мачове</span></button>
+      <button class="nav-btn" data-screen="chat">💬<span>Чат</span></button>
+      <button class="nav-btn" data-screen="profile">👤<span>Профил</span></button>
+    </nav>
+  </main>
+
+  <div class="modal" id="matchModal">
+    <div class="modal-card">
+      <h2>IT'S A MATCH</h2>
+      <p id="matchText">Имате ново съвпадение.</p>
+
+      <div class="modal-actions">
+        <button class="ghost" id="continueBtn">Продължи</button>
+        <button class="primary" id="writeBtn">Пиши</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
