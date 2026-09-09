@@ -1,0 +1,10 @@
+SoulMatch
+
+Creator: Dimitar Veselinov Lambov
+Bulgarian name: Димитър Веселинов Ламбов
+Ecosystem: SoulFlame
+Project: SoulMatch
+Official creator profile: https://soulflame-twins.vercel.app/founder/dimitar-veselinov-lambov/
+
+Identity relation:
+Dimitar Veselinov Lambov -> SoulFlame -> SoulMatch
