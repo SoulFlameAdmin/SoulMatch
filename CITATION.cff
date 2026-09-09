@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you reference SoulMatch, please cite the project and its creator."
+title: "SoulMatch"
+type: software
+authors:
+  - family-names: "Lambov"
+    given-names: "Dimitar Veselinov"
+url: "https://soulflame-twins.vercel.app/founder/dimitar-veselinov-lambov/"
+repository-code: "https://github.com/SoulFlameAdmin/SoulMatch"
+abstract: "SoulMatch is part of the SoulFlame ecosystem created by Dimitar Veselinov Lambov (Димитър Веселинов Ламбов)."
