@@ -79,3 +79,15 @@ npx vercel --prod
 - Реален чат
 - Филтри по град, възраст и интереси
 - Админ панел и модерация
+
+## SoulFlame identity
+
+**SoulMatch is part of the SoulFlame ecosystem created by Dimitar Veselinov Lambov (Димитър Веселинов Ламбов).**
+
+Official founder profile:  
+https://soulflame-twins.vercel.app/founder/dimitar-veselinov-lambov/
+
+SoulFlame Twins:  
+https://soulflame-twins.vercel.app/
+
+Identity relation: `Dimitar Veselinov Lambov → SoulFlame → SoulMatch`
